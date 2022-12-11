@@ -3,6 +3,8 @@
 const fs = require('fs');
 // import inquirer
 const inquirer = require('inquirer');
+// import generateMarkdown file
+const generateMarkdown = require('./utils/generateMarkdown');
 
 
 
@@ -10,37 +12,37 @@ const inquirer = require('inquirer');
 const questions = [
     {
         type: "input",
-        message: "What is the title of your repository?",
+        message: "Enter the title of your project?",
         name: "title"
     }, {
         type: "input",
-        message: "Please describe the repository.",
+        message: "Provide a short description explaining the what, whym and how of your project.",
         name: "description"
     }, {
         type: "input",
-        message: "Please list the Table of Contents",
-        name: "contents"
-    }, {
-        type: "input",
-        message: "Please explain the installation requirements",
+        message: "What are the steps required to install your project?",
         name: "installation"
     } , {
         type: "input",
-        message: "Please explain the usage for your application",
+        message: "Provide instructions and examples for use.",
         name: "usage"
     }, {
         type: "input",
-        message: "Please state any test(s).",
+        message: "If you wrote any tests for your application, provide examples on how to run them here.",
         name: "test"
     } , {
         type: "input",
-        message: "Please state if others can contribute.",
+        message: "Enter contribution guidelines.",
         name: "contribute"
     } , {
-        type: "input", 
-        message: "Please provide your logo information.",
-        name: "logo"
-    } , {
+        type: "input",
+        message: "Enter your email.",
+        name: "email"
+    }, { 
+        type: "input",
+        message: "Enter your Github username.";
+        name: "github"
+    }, {
         type: "list",
         message: "Please select the license you would like to use.",
         name: "license", 
@@ -55,7 +57,9 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+
+}
 
 // TODO: Create a function to initialize app
 function init() {}
