@@ -1,5 +1,9 @@
 // TODO: Include packages needed for this application
+// import file system module
+const fs = require('fs');
+// import inquirer
 const inquirer = require('inquirer');
+
 
 
 // TODO: Create an array of questions for user input
