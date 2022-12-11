@@ -29,11 +29,11 @@ const questions = [
     }, {
         type: "input",
         message: "If you wrote any tests for your application, provide examples on how to run them here.",
-        name: "test"
+        name: "tests"
     } , {
         type: "input",
         message: "Enter contribution guidelines.",
-        name: "contribute"
+        name: "contributors"
     } , {
         type: "input",
         message: "Enter your email.",
@@ -70,6 +70,7 @@ function init() {
     inquirer.createPromptModule(questions).then((data) => {
         writeToFile('README.md', data);
     })
+    
 }
 
 // Function call to initialize app
