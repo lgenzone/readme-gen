@@ -40,7 +40,7 @@ const questions = [
         name: "email"
     }, { 
         type: "input",
-        message: "Enter your Github username.";
+        message: "Enter your Github username.",
         name: "github"
     }, {
         type: "list",
@@ -67,7 +67,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.createPromptModule(questions).then((data) => {
+    inquirer.prompt(questions).then((data) => {
         writeToFile('README.md', data);
     })
     
