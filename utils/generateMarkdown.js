@@ -1,13 +1,14 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  let badge = '';
-
-  if (license != 'none') {
-    badge = `![License badge](https://img.shields.io/badge/license-${license}-green})`
-  }
   
-  return badge;
+  if (license != 'None') {
+    return `![License badge](https://img.shields.io/badge/license-${license}-green})`
+  } else {
+    return '';
+
+  }
+ 
 }
 
 // TODO: Create a function that returns the license link
@@ -24,7 +25,7 @@ function renderLicenseLink(license) {
       return 'https://opensource.org/licenses/gpl-license'
     case 'MPL':
       return 'https://opensource.org/licenses/MPL-2.0'
-    case 'none':
+    case 'None':
       return '';
   }
 };

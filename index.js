@@ -16,7 +16,7 @@ const questions = [
         name: "title"
     }, {
         type: "input",
-        message: "Provide a short description explaining the what, whym and how of your project.",
+        message: "Provide a short description explaining the what, why and how of your project.",
         name: "description"
     }, {
         type: "input",
@@ -68,7 +68,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((data) => {
-        writeToFile('README.md', data);
+        writeToFile('test-README.md', data);
     })
     
 }
