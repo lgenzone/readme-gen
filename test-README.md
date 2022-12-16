@@ -1,9 +1,9 @@
-# test 
+# Sample Project 
 
   ![License badge](https://img.shields.io/badge/license-MIT-green})
 
   ## Description
-  test
+  This is a test.
 
   ## Table of Contents 
 
@@ -15,30 +15,29 @@
   * [Questions](#questions)
   
   ## Installation 
-  test
+  Test
 
   ## Usage 
-  test
+  Test
 
   ## Testing 
-  test
+  Test
 
   ## License 
-  function renderLicenseSection(license) {
-  let licenseSection = '';
+  function renderLicenseSection(license, link) {
 
-  if (license != 'none') {
-    licenseSection += '## License \n'
-    licenseSection += `This project is protected under the ${license} license. Please visit ${renderLicenseLink} to learn more about this license.`
+  if (license != 'None') {
+    return `This project is protected under the ${license} license. Please visit ${link} to learn more about this license.`
+  } else {
+    // If there is no license, return N/A
+    return `N/A`
   }
-
-  return licenseSection;
 }
 
   ## Questions 
   
   For questions related to this project, please reach out to me using the links below. 
-  * Github: https://github.com/test
-  * Email: test
+  * Github: https://github.com/lgenzone
+  * Email: lgenzone@icloud.com
 
   

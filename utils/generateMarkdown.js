@@ -1,49 +1,47 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Create a function that returns a license badge based on which license is passed in
+
 function renderLicenseBadge(license) {
   
   if (license != 'None') {
     return `![License badge](https://img.shields.io/badge/license-${license}-green})`
   } else {
+    // If there is no license, return an empty string
     return '';
 
   }
- 
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Create a function that returns the license link
 function renderLicenseLink(license) {
   switch(license) {
     case 'MIT':
       return 'https://opensource.org/licenses/MIT'
-    case 'Apache':
+    case 'Apache 2.0':
       return 'https://opensource.org/licenses/Apache-2.0'
-    case 'BSD':
+    case 'BSD 3':
       return 'https://opensource.org/licenses/BSD-3-Clause'
-    case 'GPL':
+    case 'GVL-GPL 3.0':
       return 'https://opensource.org/licenses/gpl-license'
-    case 'MPL':
+    case 'MPL 2.0':
       return 'https://opensource.org/licenses/MPL-2.0'
     case 'None':
+      // If there is no license, return an empty string
       return '';
   }
 };
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  let licenseSection = '';
+// Create a function that returns the license section of README
+function renderLicenseSection(license, link) {
 
-  if (license != 'none') {
-    licenseSection += '## License \n'
-    licenseSection += `This project is protected under the ${license} license. Please visit ${renderLicenseLink} to learn more about this license.`
+  if (license != 'None') {
+    return `This project is protected under the ${license} license. Please visit ${link} to learn more about this license.`
+  } else {
+    // If there is no license, return N/A
+    return `N/A`
   }
-
-  return licenseSection;
 };
 
-// TODO: Create a function to generate markdown for README
+// Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title} 
 
