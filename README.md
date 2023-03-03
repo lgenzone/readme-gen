@@ -1,10 +1,9 @@
-# EZ README 
+# ORM E-Commerce Back End Application 
 
   ![License badge](https://img.shields.io/badge/license-MIT-green})
 
   ## Description
-  This application was created to assist developers. It's important to have a high-quality README for any project. This includes what the application is for, how to use it, how to install it, how to make contributions, etc. <br />
-  By saving time using a README file generator, EZ README allows creators to devote more time and attention to the project itself. 
+  A back end application for an e-commerce site using Express.js API and configured to use Sequelize to interact with MySQL database.
 
   ## Table of Contents 
 
@@ -16,20 +15,24 @@
   * [Questions](#questions)
   
   ## Installation 
-  Visual Studio Code, node.js
+  
 
   ## Usage 
-  Use the following command to launch the application: node index.js. 
-  Then, respond to each question. When you're finished your README file will be created. <br />
   
-  [Link to walkthrough video](https://drive.google.com/file/d/1hTnOx8xEDAjC4xZ87YUSuJnufYWoiq8H/view)
-
 
   ## Testing 
-  N/A
+  
 
   ## License 
-  MIT 
+  function renderLicenseSection(license, link) {
+
+  if (license != 'None') {
+    return `This project is protected under the ${license} license. Please visit ${link} to learn more about this license.`
+  } else {
+    // If there is no license, return N/A
+    return `N/A`
+  }
+}
 
   ## Questions 
   
