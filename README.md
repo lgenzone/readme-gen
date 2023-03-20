@@ -1,9 +1,9 @@
-# ORM E-Commerce Back End Application 
+# Demo Project 
 
-  ![License badge](https://img.shields.io/badge/license-MIT-green})
+  ![License badge](https://img.shields.io/badge/license-MIT-green)
 
   ## Description
-  A back end application for an e-commerce site using Express.js API and configured to use Sequelize to interact with MySQL database.
+  This a demo of my README.md generator.
 
   ## Table of Contents 
 
@@ -15,13 +15,13 @@
   * [Questions](#questions)
   
   ## Installation 
-  
+  npm install, then node index.js
 
   ## Usage 
-  
+  same as above
 
   ## Testing 
-  
+  n/a
 
   ## License 
   function renderLicenseSection(license, link) {
